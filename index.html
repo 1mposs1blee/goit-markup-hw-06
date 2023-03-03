@@ -377,7 +377,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
           <span class="footer-label-button-container">
             <label class="footer-form-field">
               <span class="footer-form-input-descr visually-hidden">Email</span>
-              <input type="email" name="user_email" class="footer-form-input" required placeholder="E-mail">
+              <input type="email" name="user_email" class="footer-form-input" required placeholder="E-mail" />
             </label>
             <button type="submit" class="footer-form-submit btn">
               Subscribe
@@ -388,6 +388,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
           </span>
         </form>
       </div>
+    </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -433,8 +434,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
           <span class="modal-form-input-descr">Comment</span>
           <textarea name="user_message" class="modal-form-message" placeholder="Text input"></textarea>
         </label>
-        <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check" required />
-        <label for="user-policy" class="modal-form-check-descr">
+        <label class="modal-form-check-descr">
+          <input type="checkbox" name="user-policy" class="modal-form-check" required />
+          <span class="modal-form-fake-checkbox">
+            <svg class="modal-form-checkbox-icon" width="10" height="8">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
           I accept the terms and conditions of the&nbsp;<a class="form-check-descr-link" href="">Privacy Policy</a>
         </label>
         <button type="submit" class="modal-form-submit btn">Send</button>
