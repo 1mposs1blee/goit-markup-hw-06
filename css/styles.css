@@ -925,11 +925,26 @@ img {
   border-color: var(--secondary-accent-color);
 }
 
+.modal-form-check-descr {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+
+  color: #757575;
+}
+
 .modal-form-check {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position: absolute;
+  top: 100%;
+  left: 8px;
+
+  appearance: none;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 .modal-form-check:checked+.modal-form-fake-checkbox {
@@ -943,15 +958,6 @@ img {
 
 .modal-form-check:checked+.modal-form-fake-checkbox .modal-form-checkbox-icon {
   opacity: 1;
-}
-
-.modal-form-check-descr {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 24px;
-
-  color: #757575;
 }
 
 .modal-form-fake-checkbox {
